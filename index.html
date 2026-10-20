@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>WerMsion · Privacy Policy</title>
+    <style>
+        /* Playful & vibrant — soft gradients, rounded corners, friendly */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Nunito', 'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(145deg, #fef9e7 0%, #e7f6ff 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 16px 40px;
+            position: relative;
+        }
+
+        /* Floating background decor — playful dots */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: radial-gradient(circle at 20% 30%, rgba(255, 183, 77, 0.15) 0%, transparent 25%),
+                              radial-gradient(circle at 80% 70%, rgba(83, 199, 240, 0.15) 0%, transparent 30%),
+                              radial-gradient(circle at 40% 80%, rgba(255, 112, 150, 0.1) 0%, transparent 40%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        /* Main card — glassy + playful rounded corners */
+        .privacy-card {
+            position: relative;
+            z-index: 2;
+            max-width: 720px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.78);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+            border-radius: 48px 48px 48px 48px;
+            box-shadow: 0 20px 40px rgba(0, 20, 40, 0.15), 0 8px 16px rgba(0, 0, 0, 0.05), inset 0 2px 8px rgba(255, 255, 255, 0.6);
+            padding: 32px 28px 40px;
+            border: 2px solid rgba(255, 255, 255, 0.7);
+            transition: all 0.2s ease;
+        }
+
+        /* Header — app name + cute icon */
+        .app-header {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 24px;
+            flex-wrap: wrap;
+        }
+
+        .app-icon {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 50%, #a1c4fd 100%);
+            width: 60px;
+            height: 60px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 34px;
+            box-shadow: 0 8px 16px rgba(255, 154, 158, 0.4);
+            transform: rotate(-4deg);
+            transition: transform 0.2s;
+        }
+
+        .app-icon:hover {
+            transform: rotate(0deg) scale(1.02);
+        }
+
+        .app-title {
+            font-size: 2.1rem;
+            font-weight: 800;
+            background: linear-gradient(130deg, #2b5876, #4e4376);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+            letter-spacing: -0.5px;
+            line-height: 1.2;
+            text-shadow: 2px 2px 10px rgba(255,255,255,0.5);
+        }
+
+        .app-sub {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #5f6c80;
+            background: rgba(255,255,240,0.6);
+            padding: 4px 12px;
+            border-radius: 40px;
+            display: inline-block;
+            margin-top: 4px;
+            border: 1px solid rgba(255, 255, 255, 0.8);
+        }
+
+        /* Update badge */
+        .last-updated {
+            margin-left: auto;
+            background: #d9f0ff;
+            padding: 6px 16px;
+            border-radius: 40px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #1e4a6b;
+            box-shadow: inset 0 0 4px rgba(0,0,0,0.02);
+            white-space: nowrap;
+        }
+
+        /* Divider — playful dashed */
+        .divider {
+            border: 0;
+            height: 3px;
+            width: 100%;
+            background: repeating-linear-gradient(90deg, #ffb86b, #ffb86b 10px, transparent 10px, transparent 20px, #7bdff2 20px, #7bdff2 30px, transparent 30px, transparent 40px);
+            margin: 20px 0 28px;
+            border-radius: 20px;
+            opacity: 0.6;
+        }
+
+        /* Typography */
+        .section {
+            margin-bottom: 28px;
+        }
+
+        .section h2 {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: #2c3e50;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 12px;
+            letter-spacing: -0.3px;
+        }
+
+        .section h2 span {
+            background: #ffe9a8;
+            padding: 4px 10px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            color: #3a3f58;
+        }
+
+        .section p {
+            color: #2d3a4f;
+            line-height: 1.7;
+            font-size: 0.98rem;
+            padding-left: 8px;
+            border-left: 4px solid rgba(255, 170, 80, 0.4);
+            margin-bottom: 10px;
+            background: rgba(255, 250, 235, 0.3);
+            border-radius: 0 12px 12px 0;
+            padding: 8px 14px;
+        }
+
+        .highlight {
+            background: #fff3e0;
+            border-radius: 16px;
+            padding: 12px 16px;
+            margin: 16px 0;
+            border: 2px dashed #ffb347;
+            font-weight: 600;
+        }
+
+        .email-bubble {
+            display: inline-flex;
+            align-items: center;
+            background: #ffffff;
+            border-radius: 60px;
+            padding: 8px 18px;
+            border: 1px solid #b3d9ff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.02);
+            margin-top: 6px;
+            font-weight: 700;
+            color: #1a4b77;
+            word-break: break-all;
+        }
+
+        .email-bubble::before {
+            content: "✉️";
+            margin-right: 8px;
+            font-size: 1.2rem;
+        }
+
+        .contact-flex {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 12px;
+            margin-top: 8px;
+        }
+
+        /* Cute button */
+        .btn-cute {
+            background: linear-gradient(135deg, #ffd86f, #fc6e6e);
+            border: none;
+            border-radius: 60px;
+            padding: 12px 24px;
+            font-weight: 800;
+            color: white;
+            font-size: 1rem;
+            box-shadow: 0 8px 0 #b34747, 0 10px 20px rgba(252, 110, 110, 0.3);
+            transition: all 0.1s ease;
+            cursor: pointer;
+            display: inline-block;
+            letter-spacing: 0.5px;
+        }
+
+        .btn-cute:active {
+            transform: translateY(5px);
+            box-shadow: 0 3px 0 #b34747, 0 8px 16px rgba(252, 110, 110, 0.3);
+        }
+
+        .btn-cute a {
+            color: white;
+            text-decoration: none;
+        }
+
+        /* Custom list */
+        .custom-list {
+            list-style: none;
+            padding-left: 8px;
+        }
+
+        .custom-list li {
+            padding: 6px 0 6px 28px;
+            background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path fill="%23ff9f43" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>') left center no-repeat;
+            background-size: 18px;
+            color: #2d3a4f;
+            font-weight: 500;
+        }
+
+        /* Footer */
+        .footer-note {
+            text-align: center;
+            margin-top: 24px;
+            font-size: 0.8rem;
+            color: #7a8b9f;
+            background: rgba(255,255,255,0.5);
+            padding: 12px;
+            border-radius: 60px;
+        }
+
+        /* Mobile responsive */
+        @media (max-width: 480px) {
+            .privacy-card {
+                padding: 24px 18px 30px;
+                border-radius: 36px;
+            }
+            .app-title {
+                font-size: 1.8rem;
+            }
+            .app-icon {
+                width: 52px;
+                height: 52px;
+                font-size: 28px;
+            }
+            .last-updated {
+                margin-left: 0;
+                width: 100%;
+                text-align: center;
+                margin-top: 8px;
+            }
+            .section p {
+                font-size: 0.92rem;
+            }
+        }
+        @media (max-width: 360px) {
+            .app-title {
+                font-size: 1.6rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="privacy-card">
+        <!-- Header -->
+        <div class="app-header">
+            <div class="app-icon">🛡️</div>
+            <div>
+                <div class="app-title">WerMsion</div>
+                <div class="app-sub">✨ Privacy Policy · Playful Edition</div>
+            </div>
+            <div class="last-updated">📅 Updated Oct 20, 2026</div>
+        </div>
+
+        <!-- Divider -->
+        <hr class="divider">
+
+        <!-- Intro -->
+        <div class="section">
+            <h2>🧩 Welcome to WerMsion</h2>
+            <p>Your privacy matters to us. This policy explains in plain, friendly language how we collect, use, and protect your information. WerMsion follows a "minimal collection, maximum protection" approach, so you can use our app with peace of mind.</p>
+        </div>
+
+        <!-- What we collect -->
+        <div class="section">
+            <h2>📦 What We Collect</h2>
+            <ul class="custom-list">
+                <li><strong>Basic device info</strong> (like device model and OS version) to optimize display.</li>
+                <li><strong>Usage logs</strong> (anonymous feature click statistics) to improve your experience.</li>
+                <li><strong>Content you voluntarily submit</strong> (e.g., emails sent via our feedback feature).</li>
+                <li><strong>We do NOT collect</strong> location, contacts, photos, or other sensitive data unless you explicitly grant permission.</li>
+            </ul>
+            <div class="highlight">
+                💡 We never sell your personal information, and we never use it for ad tracking.
+            </div>
+        </div>
+
+        <!-- How we use info -->
+        <div class="section">
+            <h2>🎯 How We Use Your Info</h2>
+            <p>All information is used solely for: providing core features, troubleshooting, security, and improving the product. WerMsion uses industry-standard encryption (like HTTPS/TLS) to protect data in transit.</p>
+        </div>
+
+        <!-- Third-party sharing -->
+        <div class="section">
+            <h2>🤝 Third-Party Sharing</h2>
+            <p>We do not disclose your personal data to unrelated third parties. We may only share when: you give explicit consent, the law requires it, or it's necessary to protect WerMsion users' rights.</p>
+        </div>
+
+        <!-- Data storage & security -->
+        <div class="section">
+            <h2>🔐 Storage & Security</h2>
+            <p>Data is stored on servers that meet international security standards. We conduct regular security audits and use access controls, encrypted storage, and other technical measures. Despite these safeguards, no internet transmission is 100% secure, but we work hard to protect your information.</p>
+        </div>
+
+        <!-- Your rights -->
+        <div class="section">
+            <h2>⚖️ Your Rights</h2>
+            <p>You have the right to access, correct, or delete your personal information. You can also withdraw consent or delete your account. To exercise any of these rights, email us at the address below, and we'll respond within 15 business days.</p>
+        </div>
+
+        <!-- Children's privacy -->
+        <div class="section">
+            <h2>🧒 Children's Privacy</h2>
+            <p>WerMsion is designed for general audiences and is not directed at children under 13. If we discover that we've collected information from a child without parental consent, we will delete it immediately.</p>
+        </div>
+
+        <!-- Policy updates -->
+        <div class="section">
+            <h2>🔄 Policy Updates</h2>
+            <p>We may update this policy from time to time. Material changes will be announced in-app or via email (if you've provided one). Continued use means you accept the updated terms.</p>
+        </div>
+
+        <!-- Contact section -->
+        <div class="section" style="margin-bottom: 8px;">
+            <h2>📬 Contact Us</h2>
+            <p>For privacy questions or requests, feel free to email us:</p>
+            <div class="contact-flex">
+                <div class="email-bubble">
+                    ckatehis95@gmail.com
+                </div>
+                <button class="btn-cute" id="copyEmailBtn" onclick="copyEmail()">📋 Copy Email</button>
+            </div>
+            <p style="margin-top: 14px; font-size: 0.9rem; background: #e6f7ff; border-left-color: #5ab0ff;">We usually respond within 1-2 business days. Thanks for trusting WerMsion!</p>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-note">
+            © 2026 WerMsion · Protecting every bit of your data with care ✦
+        </div>
+    </div>
+
+    <script>
+        // Playful copy email function with toast notification
+        function copyEmail() {
+            const email = 'ckatehis95@gmail.com';
+            // Use modern clipboard API with graceful fallback
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(email).then(() => {
+                    showToast('✅ Email copied! We look forward to hearing from you!');
+                }).catch(() => {
+                    fallbackCopy(email);
+                });
+            } else {
+                fallbackCopy(email);
+            }
+        }
+
+        function fallbackCopy(text) {
+            const textArea = document.createElement('textarea');
+            textArea.value = text;
+            textArea.style.position = 'fixed';
+            textArea.style.opacity = '0';
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            try {
+                document.execCommand('copy');
+                showToast('✅ Email copied!');
+            } catch (err) {
+                showToast('❌ Copy failed — please copy manually');
+            }
+            document.body.removeChild(textArea);
+        }
+
+        // Cute toast notification
+        function showToast(msg) {
+            // Remove old toast if exists
+            const oldToast = document.getElementById('dynamicToast');
+            if (oldToast) oldToast.remove();
+
+            const toast = document.createElement('div');
+            toast.id = 'dynamicToast';
+            toast.innerText = msg;
+            toast.style.position = 'fixed';
+            toast.style.bottom = '30px';
+            toast.style.left = '50%';
+            toast.style.transform = 'translateX(-50%)';
+            toast.style.background = 'linear-gradient(135deg, #2d3436, #636e72)';
+            toast.style.color = '#fff';
+            toast.style.padding = '14px 28px';
+            toast.style.borderRadius = '60px';
+            toast.style.fontWeight = '700';
+            toast.style.boxShadow = '0 10px 20px rgba(0,0,0,0.2)';
+            toast.style.zIndex = '9999';
+            toast.style.fontSize = '1rem';
+            toast.style.backdropFilter = 'blur(4px)';
+            toast.style.border = '2px solid #ffd86f';
+            toast.style.letterSpacing = '0.5px';
+            document.body.appendChild(toast);
+
+            // Fade in
+            toast.style.transition = 'opacity 0.3s';
+            toast.style.opacity = '1';
+
+            // Fade out after 2.5s
+            setTimeout(() => {
+                toast.style.opacity = '0';
+                setTimeout(() => {
+                    toast.remove();
+                }, 300);
+            }, 2500);
+        }
+
+        // Small playful interaction: wiggle the app icon on load
+        window.addEventListener('load', function() {
+            const icon = document.querySelector('.app-icon');
+            if (icon) {
+                icon.style.transition = 'transform 0.4s cubic-bezier(.34,1.56,.64,1)';
+                icon.style.transform = 'rotate(6deg) scale(1.02)';
+                setTimeout(() => {
+                    icon.style.transform = 'rotate(-4deg) scale(1)';
+                }, 200);
+            }
+        });
+    </script>
+</body>
+</html>
